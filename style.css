@@ -3,6 +3,13 @@ body {
     margin: 0;
     color: #331807;
     font-family: "DM Sans", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
 }
 
 .site-header {
@@ -17,7 +24,6 @@ body {
     display: flex;
     align-self: stretch;
     flex-grow: 1;
-    padding-left: 15px;
 }
 
 .nav-list{
@@ -52,4 +58,30 @@ body {
 
 .nav-link.active {
     background-color: #E6CCB2;
+}
+
+.logo {
+    display: flex;
+    background-color: #9C6644;
+    align-self: stretch;
+    align-items: center;
+    padding: 32px;
+}
+
+.site-footer {
+    background-color: #E6CCB2;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 32px;
+}
+
+.footer-link {
+    color: inherit;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
 }

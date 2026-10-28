@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="143.51352"
+   height="33.626495"
+   viewBox="0 0 143.51352 33.626495"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-18.24324,-73.186753)">
+    <g
+       id="g31"
+       transform="translate(-4.5079718,0.22966531)"
+       style="fill:#ffffff">
+      <g
+         id="g30"
+         transform="matrix(0.73385138,0,0,0.73385138,16.606113,27.291586)"
+         style="fill:#ffffff">
+        <ellipse
+           style="fill:#ffffff;stroke-width:3.30175;stroke-linejoin:round"
+           id="path1-2"
+           cx="35.383949"
+           cy="79.72863"
+           rx="27.010185"
+           ry="9.4022799" />
+        <path
+           d="M 62.366411,82.147578 A 27.010184,9.4022795 0 0 1 35.381715,91.136515 27.010184,9.4022795 0 0 1 8.401494,82.172145 c 0.122876,1.447112 0.750747,6.30939 3.845703,11.92794 3.701862,6.720305 8.427586,8.828025 8.432855,8.830365 a 14.701746,5.1176961 0 0 0 14.701663,5.11867 14.701746,5.1176961 0 0 0 14.701666,-5.11867 c 0.006,-0.002 4.73325,-2.11011 8.43509,-8.830365 3.11178,-5.649086 3.72985,-10.534935 3.84794,-11.952507 z"
+           style="fill:#ffffff;stroke-width:1.79715;stroke-linejoin:round"
+           id="path19" />
+        <circle
+           style="fill:#ffffff;stroke-width:3.45415;stroke-linejoin:round"
+           id="path29"
+           cx="35.383949"
+           cy="68.718788"
+           r="6.4916086" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.0201px;font-family:'Showcard Gothic';-inkscape-font-specification:'Showcard Gothic';writing-mode:lr-tb;direction:ltr;fill:#ffffff;stroke-width:5.29869;stroke-linejoin:round"
+         x="68.572044"
+         y="98.01712"
+         id="text30"><tspan
+           id="tspan30"
+           x="68.572044"
+           y="98.01712"
+           style="fill:#ffffff;stroke-width:5.29869">Datscha</tspan></text>
+    </g>
+  </g>
+</svg>
