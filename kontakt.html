@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datscha – Kontakt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <a href="index.html" class="logo">LOGO</a>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">STARTSEITE</a></li>
+                <li><a href="menu.html" class="nav-link">MENÜ</a></li>
+                <li><a href="reservierung.html" class="nav-link">RESERVIERUNG</a></li>
+                <li><a href="ueber-uns.html" class="nav-link">ÜBER UNS</a></li>
+                <li><a href="kontakt.html" class="nav-link active">KONTAKT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <div class="contact-container">
+            
+            <section class="contact-info">
+                <h1>KONTAKT</h1>
+                <p>Haben Sie Fragen oder besondere Wünsche? Kontaktieren Sie uns gerne direkt oder nutzen Sie das Formular.</p>
+
+                <div class="info-block">
+                    <h2>ADRESSE</h2>
+                    <p>Musterstraße 12<br>12345 Musterstadt</p>
+                </div>
+
+                <div class="info-block">
+                    <h2>TELEFON &amp; E-MAIL</h2>
+                    <p>Telefon: +49 (0) 123 456789<br>E-Mail: info@datscha-restaurant.de</p>
+                </div>
+
+                <div class="info-block">
+                    <h2>ÖFFNUNGSZEITEN</h2>
+                    <p>
+                        Montag – Freitag: 12:00 – 22:00 Uhr<br>
+                        Samstag – Sonntag: 11:00 – 23:00 Uhr
+                    </p>
+                </div>
+            </section>
+
+            
+            <section class="contact-form-section">
+                <h2>SCHREIBEN SIE UNS</h2>
+                <form class="contact-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="contact-name">Name:</label>
+                        <input type="text" id="contact-name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-email">E-Mail:</label>
+                        <input type="email" id="contact-email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-subject">Betreff:</label>
+                        <input type="text" id="contact-subject" name="subject">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-message">Nachricht:</label>
+                        <textarea id="contact-message" name="message" rows="6" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-green btn-submit">SENDEN</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <a href="impressum.html" class="footer-link">IMPRESSUM</a>
+        <a href="agb.html" class="footer-link">AGB</a>
+    </footer>
+
+</body>
+</html>

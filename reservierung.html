@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datscha – Reservierung</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <a href="index.html" class="logo">LOGO</a>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">STARTSEITE</a></li>
+                <li><a href="menu.html" class="nav-link">MENÜ</a></li>
+                <li><a href="reservierung.html" class="nav-link active">RESERVIERUNG</a></li>
+                <li><a href="ueber-uns.html" class="nav-link">ÜBER UNS</a></li>
+                <li><a href="kontakt.html" class="nav-link">KONTAKT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="reservation-page">
+        <form class="reservation-form" action="#" method="post">
+            
+            <div class="form-column guest-details">
+                <h1>IHRE RESERVIERUNG</h1>
+
+                <div class="form-group">
+                    <label for="guest-name">Name:</label>
+                    <input type="text" id="guest-name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="guest-count">Personenanzahl:</label>
+                    <input type="number" id="guest-count" name="guests" min="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="guest-phone">Telefonnummer (optional):</label>
+                    <input type="tel" id="guest-phone" name="phone">
+                </div>
+
+                <fieldset class="form-group seating-preference">
+                    <legend>Wo möchten Sie sitzen?</legend>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="seating" value="drinnen" checked>
+                            <span>Drinnen</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="seating" value="draussen">
+                            <span>Draußen</span>
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+
+            
+            <div class="form-column date-selection">
+                <label class="column-label">Datum:</label>
+                <div class="calendar-box">
+                    <div class="calendar-header">
+                        <button type="button" class="cal-arrow prev" aria-label="Vorheriger Monat">&#9664;</button>
+                        <span class="calendar-month">Oktober:</span>
+                        <button type="button" class="cal-arrow next" aria-label="Nächster Monat">&#9654;</button>
+                    </div>
+
+                    <div class="calendar-weekdays">
+                        <span>Mo</span>
+                        <span>Di</span>
+                        <span>Mi</span>
+                        <span>Do</span>
+                        <span>Fr</span>
+                        <span>Sa</span>
+                        <span>So</span>
+                    </div>
+
+                    <div class="calendar-grid">
+                        
+                        <button type="button" class="cal-day muted" disabled></button>
+                        <button type="button" class="cal-day muted" disabled></button>
+                        <button type="button" class="cal-day muted" disabled></button>
+                        <button type="button" class="cal-day muted" disabled></button>
+                        <button type="button" class="cal-day muted" disabled></button>
+                        <button type="button" class="cal-day muted" disabled></button>
+                        <button type="button" class="cal-day muted" disabled></button>
+
+                        <button type="button" class="cal-day muted" disabled></button>
+                        <button type="button" class="cal-day muted" disabled></button>
+                        <button type="button" class="cal-day muted" disabled></button>
+                        
+                        <button type="button" class="cal-day available"></button>
+                        <button type="button" class="cal-day available"></button>
+                        <button type="button" class="cal-day available"></button>
+                        <button type="button" class="cal-day available"></button>
+
+                        <button type="button" class="cal-day available"></button>
+                        <button type="button" class="cal-day available"></button>
+                        <button type="button" class="cal-day available"></button>
+                        <button type="button" class="cal-day available"></button>
+                        
+                        <button type="button" class="cal-day selected"></button>
+                        <button type="button" class="cal-day available"></button>
+                        <button type="button" class="cal-day available"></button>
+
+                        <button type="button" class="cal-day available"></button>
+                        <button type="button" class="cal-day available"></button>
+                        <button type="button" class="cal-day available"></button>
+                        <button type="button" class="cal-day available"></button>
+                        <button type="button" class="cal-day available"></button>
+                        <button type="button" class="cal-day available"></button>
+                        <button type="button" class="cal-day available"></button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="form-column time-selection">
+                <label class="column-label">Uhrzeit:</label>
+                <div class="time-box">
+                    <button type="button" class="time-arrow up" aria-label="Früher">&#9650;</button>
+                    <div class="time-slots">
+                        <button type="button" class="time-slot muted"></button>
+                        <button type="button" class="time-slot available"></button>
+                        <button type="button" class="time-slot selected"></button>
+                        <button type="button" class="time-slot muted"></button>
+                        <button type="button" class="time-slot available"></button>
+                    </div>
+                    <button type="button" class="time-arrow down" aria-label="Später">&#9660;</button>
+                </div>
+            </div>
+
+            
+            <div class="form-column notes-submission">
+                <div class="form-group notes-group">
+                    <label for="reservation-notes" class="column-label">Anmerkungen:</label>
+                    <textarea id="reservation-notes" name="notes" rows="8"></textarea>
+                </div>
+                <button type="submit" class="btn btn-green btn-submit">BESTÄTIGEN</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="site-footer">
+        <a href="impressum.html" class="footer-link">IMPRESSUM</a>
+        <a href="agb.html" class="footer-link">AGB</a>
+    </footer>
+
+</body>
+</html>
