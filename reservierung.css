@@ -1,0 +1,262 @@
+.reservation-form {
+    display: grid;
+    grid-template-columns: 1.2fr 2fr 0.5fr 1fr;
+    gap: 32px;
+    align-items: stretch;
+    background-color: #F4E0CE;
+    border: 2px solid #9C6644;
+    border-radius: 12px;
+    padding: 40px;
+}
+
+.date-selection, .time-selection, .notes-submission {
+    display: flex;
+    flex-direction: column;
+}
+.calendar-box, .time-box {
+    flex-grow: 1;
+}
+
+.reservation-page {
+    padding: 40px 36px;
+}
+
+.column-label {
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.guest-details h1 {
+    margin-top: 0;
+}
+
+.guest-details .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.guest-details .form-group > input, select {
+    color: inherit;
+    background-color: white;
+    font: inherit;
+    border: 1px solid #9C6644;
+    border-radius: 10px;
+    padding: 8px 10px;
+    min-width: 0;   
+}
+
+.guest-details .form-group > input:focus,
+.guest-details .form-group > select:focus {
+    outline: 2px solid #331807;
+}
+
+#guest-count:invalid {
+    color: #756457;
+}
+
+#guest-count option {
+    color: #331807;
+}
+
+
+.seating-preference {
+    padding: 0;
+    border: 0;
+    margin-inline: 0;
+}
+
+.radio-group {
+    display: flex;
+    gap: 24px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.radio-label input[type="radio"] {
+    accent-color: #9C6644;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.calendar-box {
+    background-color: white;
+    border: 1px solid #9C6644;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+}
+
+.calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F4E0CE;
+    border-radius: 10px;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+.cal-arrow, .time-arrow {
+    background-color: transparent;
+    border: 0;
+    color:#9C6644;
+    font-size: 20px;
+    padding: 4px 8px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.cal-arrow:hover, .time-arrow:hover {
+    background-color: #E6CCB2;
+}
+
+.calendar-month {
+    font-size: 18px;
+}
+
+.calendar-weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    text-align: center;
+    margin-bottom: 12px
+}
+
+.cal-day {
+    aspect-ratio: 1;
+    width: 65px;
+    justify-self: center;
+    border-radius: 50%;
+    border: 2px solid #9C6644;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    min-width: 0;
+    transition: background-color 0.2s ease
+}
+
+.cal-day.muted {
+    background-color: #F4E0CE;
+    color: #756457;
+    border: transparent;    
+}
+
+.cal-day.available {
+    background-color: #E6CCB2;
+    cursor: pointer;
+    
+}
+
+.cal-day.available:hover {
+    background-color: #DDB892;
+}
+
+.cal-day.selected {
+    background-color: #9C6644;
+    cursor: pointer;
+    color: white;
+}
+
+.time-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: white;
+    border: 1px solid #9C6644;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.time-slots {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    gap: 8px;
+}
+
+.time-slot {
+    color: inherit;
+    font: inherit;
+    padding: 10px 4px;
+    border: 1px solid #9C6644;
+    border-radius: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.time-slot.muted {
+    background-color: #F4E0CE; 
+    color: #756457;
+    border-color: transparent;
+}
+
+.time-slot.available {
+    background-color: #E6CCB2;
+    cursor: pointer;
+}
+
+.time-slot.available:hover {
+    background-color: #DDB892;
+}
+
+.time-slot.selected {
+    background-color: #9C6644;
+    color: white;
+    cursor: pointer;
+}
+
+.notes-group textarea {
+    font: inherit;
+    color: inherit;
+    background-color: white;
+    border: 1px solid #9C6644;
+    border-radius: 10px;
+    padding: 12px;
+    box-sizing: border-box;
+    width: 100%;
+    resize: vertical;
+}
+
+.notes-group textarea:focus {
+    outline: 2px solid #331807;
+}
+
+.btn-submit {
+    background-color: #247945;
+    color: white;
+    font: inherit;
+    font-weight: 600;
+    font-size: 18px;
+    border: 0;
+    border-radius: 10px;
+    padding: 20px 8px;
+    width: 100%;
+    margin-top: auto;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: #1B6036;
+}
+
+.btn-submit:focus-visible {
+    outline: 2px solid #331807;
+    outline-offset: 3px;
+}

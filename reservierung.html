@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reservierung.css">
+
 </head>
 <body>
 
@@ -27,7 +29,7 @@
     </header>
 
     <main class="reservation-page">
-        <form class="reservation-form" action="#" method="post">
+        <form class="reservation-form" action="reservierung-pruefen.html" method="get">
             
             <div class="form-column guest-details">
                 <h1>IHRE RESERVIERUNG</h1>
@@ -39,7 +41,20 @@
 
                 <div class="form-group">
                     <label for="guest-count">Personenanzahl:</label>
-                    <input type="number" id="guest-count" name="guests" min="1" required>
+                    <select id="guest-count" name="guests" required>
+                        <option value="" disabled selected>Bitte wählen</option>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 Personen</option>
+                        <option value="3">3 Personen</option>
+                        <option value="4">4 Personen</option>
+                        <option value="5">5 Personen</option>
+                        <option value="6">6 Personen</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="guest-email">E-Mail-Adresse:</label>
+                    <input type="email" id="guest-email" name="email" autocomplete="email" required>
                 </div>
 
                 <div class="form-group">
@@ -84,39 +99,45 @@
 
                     <div class="calendar-grid">
                         
-                        <button type="button" class="cal-day muted" disabled></button>
-                        <button type="button" class="cal-day muted" disabled></button>
-                        <button type="button" class="cal-day muted" disabled></button>
-                        <button type="button" class="cal-day muted" disabled></button>
-                        <button type="button" class="cal-day muted" disabled></button>
-                        <button type="button" class="cal-day muted" disabled></button>
-                        <button type="button" class="cal-day muted" disabled></button>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <button type="button" class="cal-day muted" disabled>1</button>
+                        <button type="button" class="cal-day muted" disabled>2</button>
+                        <button type="button" class="cal-day muted" disabled>3</button>
+                        <button type="button" class="cal-day muted" disabled>4</button>
 
-                        <button type="button" class="cal-day muted" disabled></button>
-                        <button type="button" class="cal-day muted" disabled></button>
-                        <button type="button" class="cal-day muted" disabled></button>
+                        <button type="button" class="cal-day muted" disabled>5</button>
+                        <button type="button" class="cal-day muted" disabled>6</button>
+                        <button type="button" class="cal-day muted" disabled>7</button>
                         
-                        <button type="button" class="cal-day available"></button>
-                        <button type="button" class="cal-day available"></button>
-                        <button type="button" class="cal-day available"></button>
-                        <button type="button" class="cal-day available"></button>
+                        <button type="button" class="cal-day available">8</button>
+                        <button type="button" class="cal-day available">9</button>
+                        <button type="button" class="cal-day available">10</button>
+                        <button type="button" class="cal-day available">11</button>
 
-                        <button type="button" class="cal-day available"></button>
-                        <button type="button" class="cal-day available"></button>
-                        <button type="button" class="cal-day available"></button>
-                        <button type="button" class="cal-day available"></button>
+                        <button type="button" class="cal-day available">12</button>
+                        <button type="button" class="cal-day available">13</button>
+                        <button type="button" class="cal-day available">14</button>
+                        <button type="button" class="cal-day available">15</button>
                         
-                        <button type="button" class="cal-day selected"></button>
-                        <button type="button" class="cal-day available"></button>
-                        <button type="button" class="cal-day available"></button>
+                        <button type="button" class="cal-day available">16</button>
+                        <button type="button" class="cal-day available">17</button>
+                        <button type="button" class="cal-day available">18</button>
 
-                        <button type="button" class="cal-day available"></button>
-                        <button type="button" class="cal-day available"></button>
-                        <button type="button" class="cal-day available"></button>
-                        <button type="button" class="cal-day available"></button>
-                        <button type="button" class="cal-day available"></button>
-                        <button type="button" class="cal-day available"></button>
-                        <button type="button" class="cal-day available"></button>
+                        <button type="button" class="cal-day available">19</button>
+                        <button type="button" class="cal-day available">20</button>
+                        <button type="button" class="cal-day available">21</button>
+                        <button type="button" class="cal-day available">22</button>
+                        <button type="button" class="cal-day available">23</button>
+                        <button type="button" class="cal-day available">24</button>
+                        <button type="button" class="cal-day available">25</button>
+                        <button type="button" class="cal-day available">26</button>
+                        <button type="button" class="cal-day available">27</button>
+                        <button type="button" class="cal-day available">28</button>
+                        <button type="button" class="cal-day selected">29</button>
+                        <button type="button" class="cal-day available">30</button>
+                        <button type="button" class="cal-day available">31</button>
                     </div>
                 </div>
             </div>
@@ -127,11 +148,12 @@
                 <div class="time-box">
                     <button type="button" class="time-arrow up" aria-label="Früher">&#9650;</button>
                     <div class="time-slots">
-                        <button type="button" class="time-slot muted"></button>
-                        <button type="button" class="time-slot available"></button>
-                        <button type="button" class="time-slot selected"></button>
-                        <button type="button" class="time-slot muted"></button>
-                        <button type="button" class="time-slot available"></button>
+                        <button type="button" class="time-slot muted disabled">17:00</button>
+                        <button type="button" class="time-slot available">17:30</button>
+                        <button type="button" class="time-slot selected">18:00</button>
+                        <button type="button" class="time-slot muted disabled">18:30</button>
+                        <button type="button" class="time-slot available">19:00</button>
+                        <button type="button" class="time-slot available">19:30</button>
                     </div>
                     <button type="button" class="time-arrow down" aria-label="Später">&#9660;</button>
                 </div>
@@ -143,7 +165,7 @@
                     <label for="reservation-notes" class="column-label">Anmerkungen:</label>
                     <textarea id="reservation-notes" name="notes" rows="8"></textarea>
                 </div>
-                <button type="submit" class="btn btn-green btn-submit">BESTÄTIGEN</button>
+                <button type="submit" class="btn btn-green btn-submit">WEITER</button>
             </div>
         </form>
     </main>

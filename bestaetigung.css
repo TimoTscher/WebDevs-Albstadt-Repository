@@ -1,0 +1,93 @@
+.reservation-page {
+    padding: 40px 36px;
+}
+
+.reservation-confirmation {
+    background-color: #F4E0CE;
+    border: 2px solid #9C6644;
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+}
+
+.confirmation-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #247945;
+    color: white;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+}
+
+.reservation-confirmation h1 {
+    margin: 0 0 16px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.reservation-confirmation p {
+    margin: 0 0 24px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.confirmation-details {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: center;
+    gap: 12px 24px;
+    max-width: 420px;
+    margin: 0 auto 32px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.confirmation-details dt {
+    font-weight: 600;
+}
+
+.confirmation-details dd {
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.confirmation-link {
+    display: inline-block;
+    background-color: #247945;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 14px 24px;
+    border-radius: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.conformation-link:hover {
+    background-color: #1B6036;
+}
+
+.confirmation-link:focus-visible {
+    outline: 2px solid #331807;
+    outline-offset: 3px;
+}
+
+.summary-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.edit-link {
+    display: inline-block;
+    background-color: #9C6644;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 10px;
+}
