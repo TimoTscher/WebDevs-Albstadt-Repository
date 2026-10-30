@@ -1,0 +1,113 @@
+.hero-section {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+    url("images/home_bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    padding: 48px 60px;
+    box-sizing: border-box;
+}
+
+.hero-content {
+    color: white;
+    max-width: 550px; 
+}
+
+.hero-content h1 {
+    margin-top: 0;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.offers-section {
+    padding: 40px 60px
+}
+
+.offers-section h2 {
+    margin: 0 0 32px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.offers-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 48px;
+}
+
+.offers-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 32px;
+    border: 2px solid #9C6644;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.offer-image-placeholder {
+    border: 2px solid #9C6644;
+    border-radius: 12px;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+}
+
+.offer-image-placeholder img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.offer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin-top: 16px;
+    font-size: 18px;
+}
+
+.offer-price {
+    white-space: nowrap;
+}
+
+.offers-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.offers-actions .btn {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+.offers-actions .btn-brown {
+    background-color: #9C6644;
+}
+
+.offers-actions .btn-brown:hover {
+    background-color: #805236;
+}
+
+.offers-actions .btn-green {
+    background-color: #247945;
+}
+
+.offers-actions .btn-green:hover {
+    background-color: #1B6036;
+}
