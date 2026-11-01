@@ -1,0 +1,171 @@
+body {
+    background-color: white;
+    margin: 0;
+    color: #331807;
+    font-family: "DM Sans", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.site-header {
+    min-height: 100px;
+    background-color: #F4E0CE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-nav {
+    display: flex;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+.nav-list{
+    display: flex;
+    flex-grow: 1;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    display: flex;
+    flex-grow: 1;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.2s ease;
+}
+
+.nav-link:hover {
+    background-color: #E6CCB2;
+}
+
+.nav-list > li {
+    display: flex;
+    flex: 1;
+
+}
+
+.nav-link.active {
+    background-color: #E6CCB2;
+}
+
+.logo {
+    display: flex;
+    background-color: #9C6644;
+    align-self: stretch;
+    align-items: center;
+    padding: 32px;
+}
+.menu-page {
+    padding: 40px 36px;
+}
+
+.menu-layout {
+    display: grid;
+    grid-template-columns: 18% minmax(0, 1fr);
+    gap: 32px;
+    align-items: stretch;
+}
+
+.menu-sidebar {
+    background-color: #F4E0CE;
+    border: 2px solid #9C6644;
+    border-radius: 12px;
+    font-size: large;
+    padding: 24px 16px;
+    height: fit-content;
+}
+
+.category-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    align-items: start;
+}
+
+.menu-card {
+    background-color: #F4E0CE;
+    border: 2px solid #9C6644;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    min-width: 0;
+}
+
+.menu-card-image img {
+    width: 137px;
+    height: 142px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.menu-card-body {
+    flex: 1;
+    min-width: 0;
+}
+
+.menu-card-header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.menu-card-header h3 {
+    margin-top: 0;
+}
+
+.menu-price {
+    font-weight: 600;
+}
+
+.menu-description {
+    margin-bottom: 0;
+}
+
+.site-footer {
+    background-color: #E6CCB2;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 32px;
+}
+
+.footer-link {
+    color: inherit;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
