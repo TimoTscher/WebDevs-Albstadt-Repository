@@ -65,7 +65,9 @@
 
                     <div class="form-group">
                         <label for="contact-email">E-Mail:</label>
-                        <input type="email" id="contact-email" name="email" required>
+                        <input type="email" id="contact-email" name="email" required
+                        pattern="[^\s@]+@[^\s@.]+(\.[^\s@.]+)+"
+                        title="Bitte geben Sie eine E-Mail-Adresse wie name@example.de ein.">
                     </div>
 
                     <div class="form-group">

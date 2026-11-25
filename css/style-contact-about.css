@@ -79,13 +79,6 @@
     text-align: left;
 }
 
-.about-hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: center;
-}
-
 .about-image img {
     display: block;
     width: 100%;
@@ -103,7 +96,7 @@
 
 .about-content p {
     margin: 0;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
 }
 
@@ -137,6 +130,35 @@
 
 
 .value-card p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.restaurant-spaces{
+    margin-top: 40px;
+}
+
+.spaces-grid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.space-card img{
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.space-card h3{
+    margin: 16px 0 8px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.space-card p{
     margin: 0;
     font-size: 16px;
     line-height: 1.6;
