@@ -156,7 +156,7 @@
                     <button type="button" class="time-arrow up" aria-label="Früher">&#9650;</button>
                     <div class="time-slots">
                         <button type="button" class="time-slot muted" disabled>15:00</button>
-                        <button type="button" class="time-slot available">16:00</button>
+                        <button type="button" class="time-slot availiable">16:00</button>
                         <button type="button" class="time-slot selected">17:00</button>
                         <button type="button" class="time-slot muted" disabled>18:00</button>
                         <button type="button" class="time-slot available">19:00</button>
@@ -172,6 +172,7 @@
                     <label for="reservation-notes" class="column-label">Anmerkungen:</label>
                     <textarea id="reservation-notes" name="notes" rows="8"></textarea>
                 </div>
+                <p class="form-error" role="alert" hidden></p>
                 <button type="submit" class="btn btn-green btn-submit">WEITER</button>
             </div>
         </form>
@@ -181,6 +182,8 @@
         <a href="impressum.html" class="footer-link">IMPRESSUM</a>
         <a href="agb.html" class="footer-link">AGB</a>
     </footer>
+
+    <script src="js/reservierung.js"></script>
 
 </body>
 </html>
