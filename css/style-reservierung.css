@@ -186,8 +186,9 @@
 .time-slots {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-    justify-content: space-evenly;
+    flex: 1 1 0;
+    min-height: 0;
+    overflow-y: auto;
     gap: 8px;
 }
 
@@ -198,6 +199,7 @@
     border: 1px solid #9C6644;
     border-radius: 10px;
     transition: background-color 0.2s ease;
+    flex-shrink: 0;
 }
 
 .time-slot.muted {
@@ -219,6 +221,11 @@
     background-color: #9C6644;
     color: white;
     cursor: pointer;
+}
+
+.time-selection,
+.time-box {
+    min-height: 0;
 }
 
 .notes-group textarea {
@@ -259,4 +266,10 @@
 .btn-submit:focus-visible {
     outline: 2px solid #331807;
     outline-offset: 3px;
+}
+
+.form-error {
+    color: #9B2C2C;
+    font-size: 0.9rem;
+    margin: 0 0 12px;
 }
